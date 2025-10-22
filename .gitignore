@@ -1,0 +1,5 @@
+# Ignore env files 
+*.env 
+**/.env 
+whatsapp_alerts/.env 
+alerts/.env
