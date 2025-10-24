@@ -1,5 +1,6 @@
 """
-Utility functions for HTML fetching and parsing
+Unified utility functions for HTML fetching and parsing
+Supports both traditional HTTP requests and Playwright stealth browsing
 """
 
 import requests
@@ -8,7 +9,21 @@ import logging
 from typing import Optional, Dict, Any
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
-from config import SCRAPING_CONFIG, REQUEST_HEADERS
+
+# Try to import config modules (may not exist in all setups)
+try:
+    from config import SCRAPING_CONFIG, REQUEST_HEADERS
+    CONFIG_AVAILABLE = True
+except ImportError:
+    CONFIG_AVAILABLE = False
+    SCRAPING_CONFIG = {
+        "max_retries": 3,
+        "retry_delay": 2,
+        "request_timeout": 30
+    }
+    REQUEST_HEADERS = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -99,10 +114,10 @@ class SwiggyInstamartParser:
     
     def parse_product_page(self, url: str) -> Optional[Dict[str, Any]]:
         """
-        Parse Blinkit product page and extract product information
+        Parse Swiggy Instamart product page and extract product information
         
         Args:
-            url: Blinkit product URL
+            url: Swiggy Instamart product URL
             
         Returns:
             Dictionary with product data or None if parsing failed
@@ -342,9 +357,65 @@ def validate_urls(urls: list) -> list:
     return valid_urls
 
 
+# Playwright stealth functions for Blinkit scraping
+def fetch_html(url):
+    """Fetches HTML content using a stealth-enabled browser for Blinkit scraping."""
+    print(f"🚀 Launching STEALTH browser to fetch: {url}")
+    html_content = None
+    
+    try:
+        from playwright.sync_api import sync_playwright
+        from playwright_stealth import stealth_sync
+        
+        with sync_playwright() as p:
+            # --- IMPORTANT ---
+            # For the first test run, we use headless=False to see the browser.
+            # If it works, you can change it back to headless=True for automation.
+            browser = p.chromium.launch(headless=False) 
+            page = browser.new_page()
+            
+            # --- APPLYING THE CLOAKING DEVICE ---
+            stealth_sync(page)
+            
+            # Go directly to the final URL
+            page.goto(url, timeout=90000) # Increased timeout to 90 seconds
+
+            # Wait for the product list to load
+            print("⏳ Waiting for product list to load...")
+            page.wait_for_selector("div.plp-product", timeout=60000) # Increased timeout
+            
+            print("✅ Page loaded successfully. Grabbing HTML...")
+            html_content = page.content()
+            
+            # We'll leave the browser open for a few seconds to observe
+            print("... Closing browser in 5 seconds.")
+            page.wait_for_timeout(5000) 
+            browser.close()
+            
+    except ImportError:
+        print("❌ Playwright not available. Install with: pip install playwright playwright-stealth")
+        return None
+    except Exception as e:
+        print(f"❌ Playwright Stealth Error: {e}")
+        # Save a screenshot for debugging if anything goes wrong
+        try:
+            from playwright.sync_api import sync_playwright
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page()
+                page.goto(url, timeout=60000)
+                page.screenshot(path='error.png')
+                print("📸 Screenshot 'error.png' saved for debugging.")
+                browser.close()
+        except Exception as ss_e:
+            print(f"Could not take screenshot: {ss_e}")
+
+    return html_content
+
+
 if __name__ == "__main__":
     # Test the parser with a sample URL
-    parser = BlinkitParser()
-    test_url = "https://blinkit.com/sample-product"
+    parser = SwiggyInstamartParser()
+    test_url = "https://swiggy.com/sample-product"
     result = parser.parse_product_page(test_url)
     print(f"Test result: {result}")

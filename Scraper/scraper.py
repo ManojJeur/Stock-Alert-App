@@ -1,6 +1,6 @@
 """
-Main Blinkit Product Scraper
-Scrapes product data from Blinkit and stores in PostgreSQL database
+Unified Product Scraper
+Supports both Swiggy Instamart and Blinkit scraping
 """
 
 import logging
@@ -9,9 +9,15 @@ import schedule
 from typing import List, Dict, Any
 from datetime import datetime
 
-from db import get_db_connection, FirebaseManager
-from utils import SwiggyInstamartParser, load_urls_from_file, validate_urls
-from config import LOG_FORMAT
+# Try to import database modules (may not exist in all setups)
+try:
+    from db import get_db_connection, FirebaseManager
+    from utils import SwiggyInstamartParser, load_urls_from_file, validate_urls
+    from config import LOG_FORMAT
+    DB_AVAILABLE = True
+except ImportError:
+    DB_AVAILABLE = False
+    LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
 # Configure logging
 logging.basicConfig(
@@ -25,12 +31,12 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-class SwiggyInstamartScraper:
-    """Main scraper class for Swiggy Instamart products"""
+class UnifiedScraper:
+    """Unified scraper class supporting both Swiggy Instamart and Blinkit"""
     
-    def __init__(self, urls_file: str = "urls.txt"):
+    def __init__(self, urls_file: str = "urls.txt", scraper_type: str = "swiggy"):
         self.urls_file = urls_file
-        self.parser = SwiggyInstamartParser()
+        self.scraper_type = scraper_type.lower()
         self.stats = {
             'total_processed': 0,
             'successful': 0,
@@ -38,21 +44,44 @@ class SwiggyInstamartScraper:
             'updated': 0,
             'new': 0
         }
+        
+        # Initialize parser based on type
+        if self.scraper_type == "swiggy" and DB_AVAILABLE:
+            self.parser = SwiggyInstamartParser()
+        elif self.scraper_type == "blinkit":
+            try:
+                from blinkit_scraper import scrape_blinkit_products, save_to_json
+                from utils import fetch_html
+                self.blinkit_scraper = scrape_blinkit_products
+                self.blinkit_saver = save_to_json
+                self.blinkit_fetcher = fetch_html
+            except ImportError:
+                logger.error("Blinkit scraper modules not available")
+                self.blinkit_scraper = None
+        else:
+            logger.error(f"Unsupported scraper type: {scraper_type}")
     
     def load_urls(self) -> List[str]:
         """Load and validate URLs from file"""
         try:
-            urls = load_urls_from_file(self.urls_file)
-            valid_urls = validate_urls(urls)
-            logger.info(f"Loaded {len(valid_urls)} valid URLs for scraping")
-            return valid_urls
+            if DB_AVAILABLE:
+                urls = load_urls_from_file(self.urls_file)
+                valid_urls = validate_urls(urls)
+                logger.info(f"Loaded {len(valid_urls)} valid URLs for scraping")
+                return valid_urls
+            else:
+                # Fallback for when DB modules are not available
+                with open(self.urls_file, 'r') as f:
+                    urls = [line.strip() for line in f if line.strip()]
+                logger.info(f"Loaded {len(urls)} URLs for scraping")
+                return urls
         except Exception as e:
             logger.error(f"Error loading URLs: {e}")
             return []
     
     def scrape_single_product(self, url: str) -> bool:
         """
-        Scrape a single product and store in database
+        Scrape a single product based on scraper type
         
         Args:
             url: Product URL to scrape
@@ -63,6 +92,22 @@ class SwiggyInstamartScraper:
         try:
             logger.info(f"Scraping product: {url}")
             
+            if self.scraper_type == "swiggy" and DB_AVAILABLE:
+                return self._scrape_swiggy_product(url)
+            elif self.scraper_type == "blinkit":
+                return self._scrape_blinkit_product(url)
+            else:
+                logger.error(f"Unsupported scraper type: {self.scraper_type}")
+                return False
+                    
+        except Exception as e:
+            logger.error(f"Error scraping product {url}: {e}")
+            self.stats['failed'] += 1
+            return False
+    
+    def _scrape_swiggy_product(self, url: str) -> bool:
+        """Scrape Swiggy Instamart product"""
+        try:
             # Parse product data
             product_data = self.parser.parse_product_page(url)
             if not product_data:
@@ -80,9 +125,38 @@ class SwiggyInstamartScraper:
                     logger.error(f"Failed to store product in database: {url}")
                     self.stats['failed'] += 1
                     return False
-                    
         except Exception as e:
-            logger.error(f"Error scraping product {url}: {e}")
+            logger.error(f"Error scraping Swiggy product {url}: {e}")
+            self.stats['failed'] += 1
+            return False
+    
+    def _scrape_blinkit_product(self, url: str) -> bool:
+        """Scrape Blinkit product"""
+        try:
+            if not self.blinkit_scraper:
+                logger.error("Blinkit scraper not available")
+                return False
+            
+            # Fetch HTML content
+            html_content = self.blinkit_fetcher(url)
+            if not html_content:
+                logger.warning(f"Failed to fetch HTML from: {url}")
+                self.stats['failed'] += 1
+                return False
+            
+            # Parse products
+            products = self.blinkit_scraper(html_content)
+            if products:
+                self.blinkit_saver(products)
+                logger.info(f"Successfully scraped {len(products)} Blinkit products")
+                self.stats['successful'] += 1
+                return True
+            else:
+                logger.warning(f"No products found on: {url}")
+                self.stats['failed'] += 1
+                return False
+        except Exception as e:
+            logger.error(f"Error scraping Blinkit product {url}: {e}")
             self.stats['failed'] += 1
             return False
     
@@ -93,7 +167,7 @@ class SwiggyInstamartScraper:
         Returns:
             Dictionary with scraping statistics
         """
-        logger.info("Starting product scraping session")
+        logger.info(f"Starting {self.scraper_type} product scraping session")
         start_time = time.time()
         
         # Reset stats
@@ -141,6 +215,10 @@ class SwiggyInstamartScraper:
     
     def get_database_stats(self) -> Dict[str, Any]:
         """Get current database statistics"""
+        if not DB_AVAILABLE:
+            logger.warning("Database not available")
+            return {}
+        
         try:
             with get_db_connection() as db:
                 total_products = db.get_products_count()
@@ -162,6 +240,10 @@ class SwiggyInstamartScraper:
     
     def test_connection(self) -> bool:
         """Test database connection"""
+        if not DB_AVAILABLE:
+            logger.warning("Database not available")
+            return False
+        
         try:
             with get_db_connection() as db:
                 return True
@@ -173,7 +255,7 @@ class SwiggyInstamartScraper:
 def run_scheduled_scrape():
     """Function to run scheduled scraping"""
     logger.info("Starting scheduled scraping run")
-    scraper = SwiggyInstamartScraper()
+    scraper = UnifiedScraper()
     stats = scraper.scrape_all_products()
     logger.info(f"Scheduled scraping completed with stats: {stats}")
 
@@ -195,13 +277,13 @@ def setup_scheduler():
 
 def main():
     """Main function to run the scraper"""
-    logger.info("Swiggy Instamart Product Scraper started")
+    logger.info("Unified Product Scraper started")
     
     # Initialize scraper
-    scraper = SwiggyInstamartScraper()
+    scraper = UnifiedScraper()
     
-    # Test database connection
-    if not scraper.test_connection():
+    # Test database connection if available
+    if DB_AVAILABLE and not scraper.test_connection():
         logger.error("Database connection failed. Please check your database configuration.")
         return
     
@@ -239,7 +321,7 @@ def main():
             print("Unknown command. Use: scrape, schedule, stats, or test")
     else:
         # Interactive mode
-        print("Swiggy Instamart Product Scraper")
+        print("Unified Product Scraper")
         print("1. Run single scraping session")
         print("2. Start scheduled scraping (every 30 minutes)")
         print("3. Show database statistics")
