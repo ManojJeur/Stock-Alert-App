@@ -1,0 +1,24 @@
+{
+    "pincodes": [
+        "400001",
+        "400002"
+    ],
+    "products": {
+        "Test Product 1": {
+            "url": "https://blinkit.com/products/test-product-1",
+            "platform": "blinkit"
+        },
+        "Test Product 2": {
+            "url": "https://www.swiggy.com/instamart/item/test",
+            "platform": "swiggy"
+        }
+    },
+    "alert_settings": {
+        "send_alerts": true,
+        "alert_on_status_change": true,
+        "alert_on_low_stock": true,
+        "alert_on_oos": true,
+        "alert_on_back_in_stock": true,
+        "send_daily_summary": false
+    }
+}

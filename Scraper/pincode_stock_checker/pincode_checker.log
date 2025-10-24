@@ -1,0 +1,256 @@
+2025-10-24 11:48:46,984 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:48:46,985 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:48:46,985 - twilio.http_client - INFO - Headers:
+2025-10-24 11:48:46,985 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:48:46,985 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:48:46,986 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:48:46,986 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:48:46,986 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:48:46,986 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:48:47,294 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:48:47,296 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:18:48 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQ4294187752dbd4580a840c412764ebf7', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 a1ace081afaa01eee6efbc2bb1e8d5ea.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': '4lc5PYeShd7gmw1PIdQcPXxCSKMJnvSIjn5dvOw1p0YZGf71GwC92Q=='}
+2025-10-24 11:48:47,296 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:48:47,296 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:48:47,296 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:48:47,297 - twilio.http_client - INFO - Headers:
+2025-10-24 11:48:47,297 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:48:47,297 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:48:47,297 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:48:47,298 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:48:47,298 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:48:47,298 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:48:47,526 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:48:47,526 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:18:48 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQ0fc576e745e99ef8d548352fc3353c85', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 a1ace081afaa01eee6efbc2bb1e8d5ea.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'ynroX4hw7v87CH-apoBSisHfxcyxSCAn_vLnu0Ey7HYuTcjtxWINHA=='}
+2025-10-24 11:48:47,526 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:48:47,527 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:48:47,527 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:48:47,527 - twilio.http_client - INFO - Headers:
+2025-10-24 11:48:47,527 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:48:47,527 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:48:47,529 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:48:47,529 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:48:47,529 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:48:47,529 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:48:48,124 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:48:48,124 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:18:49 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQd89a446e2a34081fc28485dfe58548ad', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 a1ace081afaa01eee6efbc2bb1e8d5ea.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'RHD8HjBQSN6VHT1hIYDY7jKQ-_T7xzOPOiiNYu-aF-FZ8GqtpVlCQQ=='}
+2025-10-24 11:48:48,125 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - Headers:
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:48:48,125 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:48:48,753 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:48:48,753 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:18:49 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQee456723766ff49756f21048214f5b7b', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 a1ace081afaa01eee6efbc2bb1e8d5ea.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'h9Q0zD8wjxwtp9-tRzhoukFIwW_cP-_ZGzmAWZ_gsuyiXyYFPsTrAg=='}
+2025-10-24 11:48:48,753 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:48:48,754 - checker - INFO - Configuration loaded from config.json
+2025-10-24 11:48:48,754 - checker - INFO - Running single stock check
+2025-10-24 11:48:48,754 - checker - INFO - Starting stock check cycle
+2025-10-24 11:48:48,754 - checker - INFO - No previous status found. Starting fresh.
+2025-10-24 11:48:48,754 - checker - INFO - Checking 4 products across 8 pincodes
+2025-10-24 11:48:48,754 - checker - INFO - Checking Amul Butter 500g in pincode 400001
+2025-10-24 11:48:49,479 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:50,488 - checker - INFO - Checking Amul Butter 500g in pincode 400002
+2025-10-24 11:48:50,908 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:51,912 - checker - INFO - Checking Amul Butter 500g in pincode 400003
+2025-10-24 11:48:52,295 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:53,304 - checker - INFO - Checking Amul Butter 500g in pincode 400004
+2025-10-24 11:48:53,674 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:54,679 - checker - INFO - Checking Amul Butter 500g in pincode 400005
+2025-10-24 11:48:55,029 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:56,030 - checker - INFO - Checking Amul Butter 500g in pincode 400006
+2025-10-24 11:48:56,432 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:57,448 - checker - INFO - Checking Amul Butter 500g in pincode 400007
+2025-10-24 11:48:57,845 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:48:58,857 - checker - INFO - Checking Amul Butter 500g in pincode 400008
+2025-10-24 11:48:59,267 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/amul-butter-500g: 403 Client Error: Forbidden for url: https://blinkit.com/products/amul-butter-500g
+2025-10-24 11:49:00,269 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400001
+2025-10-24 11:49:00,782 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:01,794 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400002
+2025-10-24 11:49:02,138 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:03,153 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400003
+2025-10-24 11:49:03,532 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:04,536 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400004
+2025-10-24 11:49:04,865 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:05,870 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400005
+2025-10-24 11:49:06,267 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:07,276 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400006
+2025-10-24 11:49:07,681 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:08,692 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400007
+2025-10-24 11:49:09,097 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:10,108 - checker - INFO - Checking Maggie Noodles 2-Minute Masala in pincode 400008
+2025-10-24 11:49:10,450 - platform_adapters - ERROR - Failed to fetch page https://blinkit.com/products/maggie-noodles-2-minute-masala: 403 Client Error: Forbidden for url: https://blinkit.com/products/maggie-noodles-2-minute-masala
+2025-10-24 11:49:11,463 - checker - INFO - Checking Coca Cola 600ml in pincode 400001
+2025-10-24 11:49:12,931 - checker - INFO - Checking Coca Cola 600ml in pincode 400002
+2025-10-24 11:49:14,391 - checker - INFO - Checking Coca Cola 600ml in pincode 400003
+2025-10-24 11:49:15,756 - checker - INFO - Checking Coca Cola 600ml in pincode 400004
+2025-10-24 11:49:17,090 - checker - INFO - Checking Coca Cola 600ml in pincode 400005
+2025-10-24 11:49:18,457 - checker - INFO - Checking Coca Cola 600ml in pincode 400006
+2025-10-24 11:49:19,823 - checker - INFO - Checking Coca Cola 600ml in pincode 400007
+2025-10-24 11:49:21,211 - checker - INFO - Checking Coca Cola 600ml in pincode 400008
+2025-10-24 11:49:22,596 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400001
+2025-10-24 11:49:23,166 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:24,172 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400002
+2025-10-24 11:49:24,721 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:25,733 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400003
+2025-10-24 11:49:26,363 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:27,365 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400004
+2025-10-24 11:49:28,004 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:29,007 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400005
+2025-10-24 11:49:29,578 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:30,592 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400006
+2025-10-24 11:49:31,164 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:32,168 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400007
+2025-10-24 11:49:32,757 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:33,764 - checker - INFO - Checking Lay's India's Magic Masala Chips in pincode 400008
+2025-10-24 11:49:34,353 - platform_adapters - ERROR - Error processing Swiggy product https://www.swiggy.com/instamart/item/OVACG3I2JD: 'SwiggyInstamartAdapter' object has no attribute '_extract_price'
+2025-10-24 11:49:35,364 - checker - INFO - Stock check cycle completed
+2025-10-24 11:49:35,366 - checker - INFO - Single check completed
+2025-10-24 11:50:21,431 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:21,432 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:21,432 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:21,432 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:21,433 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:21,433 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:21,433 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:21,433 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:21,433 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:21,762 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:21,762 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:23 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQ1d08ef040ec9a9664811be8f905ed8e8', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'vOjMdRi4H1D4zd-ekiY6Q_wWm2MCvlHUcV1OX4ElXuKvuwn0yaZ-QA=='}
+2025-10-24 11:50:21,762 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:21,762 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:21,762 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:21,763 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:21,994 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:21,995 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:23 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQ8a4626b23cb8e1e7dcf7f64e1c2025d5', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'VA24To284Kw0OyeFCASzSyfxuqA9MR42WR-j_FdrIkbo-l0HvFR-0Q=='}
+2025-10-24 11:50:21,995 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:21,995 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:21,995 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:21,995 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:21,995 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:21,996 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:21,996 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:21,996 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:21,996 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:21,996 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:22,596 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:22,596 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:23 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQbd8b78b6604524cb9910c9b0c7353ad3', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': '9NxxFV8OYGvhr4ZcWNECmgs_M6dZPgGyV1ihZkEYGo3WsvLCKTyajg=='}
+2025-10-24 11:50:22,596 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:22,596 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:22,596 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:22,596 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:22,596 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:22,597 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:22,597 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:22,597 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:22,597 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:22,597 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:23,237 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:24 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQff7ce0722c229318635a2221ea85ecfa', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'w0WFXOcZuYUAvYwg353fZpObzct7DLQvP3WhrfuIYE1qOM7NR1JIHQ=='}
+2025-10-24 11:50:23,238 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:23,238 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:23,467 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:24 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQad9bf0cb219973070cc989cc28f4a2b3', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': '-g4TfYVLlH0u4wchDnhhIs-anFG-QbnXlM6uUES08i3yqd7DnvDIng=='}
+2025-10-24 11:50:23,468 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:23,468 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:24,101 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:24,101 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:25 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQbb5f704b5369cba686bc33a5b666268f', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'YlFJMmQ8WXX_FopJZS6NDuECX-Vhef4ncEcsiTLyagFrii3H6yjkEQ=='}
+2025-10-24 11:50:24,101 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:25,102 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:25,741 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:25,741 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:26 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQf79c151f255006ab3d22c37f48c880f5', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'bDICTjuOnA7n6XqaS9Ze8cHD_shkZWumLU9E9shbX_MSMo2SC_B5DA=='}
+2025-10-24 11:50:25,741 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:26,742 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:26,742 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:26,743 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:26,743 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:26,743 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:26,743 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:26,743 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:26,744 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:26,744 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:26,990 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:26,990 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:28 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQ180bccdfdd560da5ad7fe34672776b01', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'O3V3AD3TW2lIvO_wl8xa28sK__dKRihTmUV1bHHvV6PB3oHp6wwBtA=='}
+2025-10-24 11:50:26,991 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:27,997 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:28,239 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:28,239 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:29 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQ9ae7c2196b94b3663ee7e564bb2399ad', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'lxOheDvjf1kJWH2Xrgm6Nd-cq7HBgWbuXD6j8tJ6J0nu5u9UI3ygBA=='}
+2025-10-24 11:50:28,240 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:29,248 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:29,249 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:29,481 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:29,481 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:30 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQc012c8d1a22f0bf49a7afbc58ab76673', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'CYR7HCY3XLwNjlzGHan5S3-HTLofhl66eUarpNNAzFdmXdwb5RgWhg=='}
+2025-10-24 11:50:29,481 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:30,489 - checker - INFO - Configuration loaded from demo_config.json
+2025-10-24 11:50:30,489 - checker - INFO - Running single stock check
+2025-10-24 11:50:30,490 - checker - INFO - Starting stock check cycle
+2025-10-24 11:50:30,490 - checker - INFO - Checking 2 products across 3 pincodes
+2025-10-24 11:50:30,490 - checker - INFO - Checking Demo Product 1 in pincode 400001
+2025-10-24 11:50:31,868 - checker - INFO - Checking Demo Product 1 in pincode 400002
+2025-10-24 11:50:33,231 - checker - INFO - Checking Demo Product 1 in pincode 400003
+2025-10-24 11:50:34,633 - checker - INFO - Checking Demo Product 2 in pincode 400001
+2025-10-24 11:50:36,216 - checker - INFO - Checking Demo Product 2 in pincode 400002
+2025-10-24 11:50:37,825 - checker - INFO - Checking Demo Product 2 in pincode 400003
+2025-10-24 11:50:39,451 - twilio.http_client - INFO - -- BEGIN Twilio API Request --
+2025-10-24 11:50:39,451 - twilio.http_client - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/your_twilio_account_sid/Messages.json
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - Headers:
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - Content-Type : application/x-www-form-urlencoded
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - Accept : application/json
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - User-Agent : twilio-python/9.8.4 (Windows AMD64) Python/3.10.11
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - X-Twilio-Client : python-9.8.4
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - Accept-Charset : utf-8
+2025-10-24 11:50:39,452 - twilio.http_client - INFO - -- END Twilio API Request --
+2025-10-24 11:50:39,703 - twilio.http_client - INFO - Response Status Code: 401
+2025-10-24 11:50:39,703 - twilio.http_client - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 24 Oct 2025 06:20:40 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQde3216bc2f914e0ebf0e0e4e5b37640d', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 6fe12e187db7f2679aca203ae6b43944.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'Wb7hB0dgyIcqKhZx9vVoA9OikzOyi_GNqcHXeSzarc4AEjDJv8m7OA=='}
+2025-10-24 11:50:39,703 - alert - ERROR - Twilio error sending alert: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-24 11:50:39,703 - checker - INFO - Summary alert sent
+2025-10-24 11:50:39,703 - checker - INFO - Stock check cycle completed
+2025-10-24 11:50:39,704 - checker - INFO - Single check completed
