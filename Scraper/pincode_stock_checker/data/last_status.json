@@ -1,0 +1,42 @@
+{
+    "Demo Product 1": {
+        "400001": {
+            "status": "Error",
+            "stock_level": "Page Error",
+            "price": null,
+            "timestamp": "2025-10-24T11:50:30.866171"
+        },
+        "400002": {
+            "status": "Error",
+            "stock_level": "Page Error",
+            "price": null,
+            "timestamp": "2025-10-24T11:50:32.230064"
+        },
+        "400003": {
+            "status": "Error",
+            "stock_level": "Page Error",
+            "price": null,
+            "timestamp": "2025-10-24T11:50:33.621279"
+        }
+    },
+    "Demo Product 2": {
+        "400001": {
+            "status": "Available",
+            "stock_level": "In Stock",
+            "price": null,
+            "timestamp": "2025-10-24T11:50:35.213936"
+        },
+        "400002": {
+            "status": "Available",
+            "stock_level": "In Stock",
+            "price": null,
+            "timestamp": "2025-10-24T11:50:36.815436"
+        },
+        "400003": {
+            "status": "Available",
+            "stock_level": "In Stock",
+            "price": null,
+            "timestamp": "2025-10-24T11:50:38.438045"
+        }
+    }
+}

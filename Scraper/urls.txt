@@ -1,0 +1,17 @@
+# Swiggy Instamart Product URLs for Stock Alert Dashboard
+# Add your Swiggy Instamart product URLs here, one per line
+# Lines starting with # are comments and will be ignored
+
+# Example URLs (replace with actual Swiggy Instamart product URLs):
+https://www.swiggy.com/instamart/item/JGHN8V065D
+https://www.swiggy.com/instamart/item/IX8H30PL2E
+https://www.swiggy.com/instamart/item/JKFJW8ZUYW
+
+# Instructions:
+# 1. Visit Swiggy Instamart and find products you want to monitor
+# 2. Copy the product URLs and paste them below
+# 3. Remove the # symbol from the beginning of each URL
+# 4. Save this file
+# 5. Run the scraper to start monitoring these products
+
+

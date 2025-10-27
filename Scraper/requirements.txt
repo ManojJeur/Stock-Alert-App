@@ -1,0 +1,31 @@
+# Blinkit Product Scraper Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core scraping libraries
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Firebase connectivity
+firebase-admin>=6.0.0
+
+# Scheduling
+schedule>=1.2.0
+
+# HTTP client (alternative to requests)
+httpx>=0.24.0
+
+# Data handling
+pandas>=2.0.0
+
+# Logging and utilities
+python-dotenv>=1.0.0
+
+# Optional: For advanced scheduling
+apscheduler>=3.10.0
+
+# Optional: For better HTML parsing
+html5lib>=1.1
+
+# Optional: For data validation
+pydantic>=2.0.0

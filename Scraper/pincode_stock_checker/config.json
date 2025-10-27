@@ -1,0 +1,38 @@
+{
+    "pincodes": [
+        "400001",
+        "400002", 
+        "400003",
+        "400004",
+        "400005",
+        "400006",
+        "400007",
+        "400008"
+    ],
+    "products": {
+        "Amul Butter 500g": {
+            "url": "https://blinkit.com/products/amul-butter-500g",
+            "platform": "blinkit"
+        },
+        "Maggie Noodles 2-Minute Masala": {
+            "url": "https://blinkit.com/products/maggie-noodles-2-minute-masala",
+            "platform": "blinkit"
+        },
+        "Coca Cola 600ml": {
+            "url": "https://www.swiggy.com/instamart/item/0IFZHN76PS",
+            "platform": "swiggy"
+        },
+        "Lay's India's Magic Masala Chips": {
+            "url": "https://www.swiggy.com/instamart/item/OVACG3I2JD",
+            "platform": "swiggy"
+        }
+    },
+    "alert_settings": {
+        "send_alerts": true,
+        "alert_on_status_change": true,
+        "alert_on_low_stock": true,
+        "alert_on_oos": true,
+        "alert_on_back_in_stock": true,
+        "send_daily_summary": false
+    }
+}
